@@ -218,3 +218,11 @@ img {
         column-gap: 2rem;
     }
 }
+
+/*Entrada*/
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+}
