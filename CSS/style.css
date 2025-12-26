@@ -139,6 +139,10 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
 }
 @media (min-width: 768px) {
     .boton {
@@ -225,4 +229,34 @@ img {
         display: grid;
         grid-template-rows: 2fr 1fr;
     }
+}
+
+/*Contacto*/
+.contacto-bg {
+    background-image: url(/img/contacto.jpg);
+    height: 40rem;  /*Para que la imagen se vea, ya que el div no tiene contenido*/
+    background-size: cover;  /*Para que la imagen ocupe todo el espacio del contenedor*/
+    background-repeat: no-repeat; 
+}
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;  /*El margin negativo es para que el formulario se suba sobre la imagen de fondo*/
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    text-align:right;
+    gap: 2rem
+}
+.campo__label {
+    flex: 0 0 9rem;  /*El primer valor es el crecimiento, el segundo es la reducción y el tercero es el tamaño base*/
+}
+.campo__field {
+    flex: 1;  /*Ocupa todo el espacio disponible*/
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+    height: 20rem;
 }
