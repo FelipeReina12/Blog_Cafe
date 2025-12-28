@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Prefetch se aplica a la siguiente página a la que el usuario podría navegar -->
-     <link rel="Prefetch" href="/nosotros.html" as="document">  <!-- para que la página cargue mas raápido al navegar -->
+    <link rel="Prefetch" href="/nosotros.html" as="document"> <!-- para que la página cargue mas raápido al navegar -->
 
 
     <!-- Preload -->
@@ -22,7 +22,6 @@
         rel="stylesheet">
     <link rel="preload" href="/CSS/style.css" as="style">
     <link rel="stylesheet" href="/CSS/style.css"> <!-- Luego nuestro CSS personalizado -->
-    <link rel="preload" href="/img/blog1.jpg" as="image">
 
 </head>
 
@@ -51,6 +50,10 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada"> <!-- un article es para contenido independiente como una entrada de blog -->
                 <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="/img/blog1.webp" type="image/webp">
+                        <!-- formato webp (mas liviano) para navegadores que lo soporten -->
+                    </picture>
                     <img loading="lazy" src="/img/blog1.jpg" alt="imagen del blog">
                 </div>
                 <div class="entrada__contenido">
@@ -63,6 +66,10 @@
             </article>
             <article class="entrada"> <!-- un article es para contenido independiente como una entrada de blog -->
                 <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="/img/blog2.webp" type="image/webp">
+                        <!-- formato webp (mas liviano) para navegadores que lo soporten -->
+                    </picture>
                     <img loading="lazy" src="/img/blog2.jpg" alt="imagen del blog">
                 </div>
                 <div class="entrada__contenido">
@@ -75,6 +82,10 @@
             </article>
             <article class="entrada"> <!-- un article es para contenido independiente como una entrada de blog -->
                 <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="/img/blog3.webp" type="image/webp">
+                        <!-- formato webp (mas liviano) para navegadores que lo soporten -->
+                    </picture>
                     <img loading="lazy" src="/img/blog3.jpg" alt="imagen del blog">
                 </div>
                 <div class="entrada__contenido">
