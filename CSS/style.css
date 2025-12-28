@@ -144,7 +144,7 @@ img {
   font-family: var(--fuenteHeading);
   color: var(--blanco);
   text-align: center;
-  padding: 1rem 3rem;
+  padding: 1rem;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
